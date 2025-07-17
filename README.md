@@ -5,33 +5,57 @@ A comprehensive deep learning project for diabetic retinopathy classification us
 ## Project Structure
 
 ```
-CNN-Vs-ViT/
+Eye-CNN-ViT/
 ├── config/
 │   ├── __init__.py
-│   └── settings.py              # Configuration parameters
+│   └── settings.py
 ├── data/
-│   ├── __init__.py
-│   └── dataset.py               # Dataset classes and data preparation
+│   └── dataset.py
+├── Flask-App/
+│   ├── app.py
+│   ├── models/
+│   │   ├── architecture.py
+│   │   ├── cnn_model_config.json
+│   │   ├── cnn_model.pth X
+│   │   ├── vit_model_config.json
+│   │   └── vit_model.pth X
+│   ├── static/
+│   │   ├── app.js
+│   │   ├── cnn_hierarchy.png
+│   │   ├── cnn_icon.png
+│   │   ├── KO.mp3
+│   │   ├── KO.png
+│   │   ├── style.css
+│   │   ├── uploads/
+│   │   ├── vit_attention.png
+│   │   ├── vit_icon.png
+│   │   ├── Vs.mp3
+│   │   └── Vs.png
+│   ├── templates/
+│   │   └── index.html
+│   └── utils/
+│       ├── preprocessing.py
+│       └── vit_custom.py
 ├── models/
 │   ├── __init__.py
-│   └── neural_networks.py       # Neural network architectures
-├── utils/
-│   ├── __init__.py
-│   ├── image_processing.py      # Image loading and preprocessing
-│   └── augmentation.py          # Data augmentation utilities
-├── training/
-│   ├── __init__.py
-│   ├── early_stopping.py        # Early stopping utility
-│   ├── trainer.py               # Training and validation functions
-│   ├── evaluation.py            # Evaluation and visualization
-│   └── pipeline.py              # Main training pipeline
+│   └── neural_networks.py
+├── outputs/
 ├── scripts/
 │   ├── __init__.py
-│   └── main.py                  # Main entry point
-├── outputs/                     # Model checkpoints and results
-├── tests/                       # Unit tests
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
+│   └── main.py
+├── training/
+│   ├── __init__.py
+│   ├── early_stopping.py
+│   ├── evaluation.py
+│   ├── pipeline.py
+│   └── trainer.py
+├── utils/
+│   ├── __init__.py
+│   ├── augmentation.py
+│   └── image_processing.py
+├── README.md
+└── requirements.txt
+
 ```
 
 ## Features
