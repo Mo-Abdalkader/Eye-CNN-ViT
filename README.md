@@ -50,7 +50,7 @@ CNN-Vs-ViT/
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd CNN-Vs-ViT
+cd Eye-CNN-ViT
 ```
 
 2. Install dependencies:
@@ -69,10 +69,8 @@ python scripts/main.py
 ```
 
 This will train:
-- ResNet50 without augmentation
-- ResNet50 with augmentation
-- ViT without augmentation
-- ViT with augmentation
+- ResNet50
+- ViT
 
 ### Custom Training
 
@@ -84,7 +82,7 @@ from training.pipeline import run_training_pipeline
 # Train ResNet50 with augmentation and fine-tuning
 run_training_pipeline(
     model_type='ResNet50',
-    augment=True,
+    augment=False,
     fine_tune=True
 )
 ```
