@@ -38,7 +38,7 @@ CNN-Vs-ViT/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Mo-Abdalkader/Eye-CNN-ViT
 cd CNN-Vs-ViT
 ```
 
